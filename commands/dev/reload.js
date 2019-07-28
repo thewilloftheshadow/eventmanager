@@ -25,10 +25,10 @@ exports.run = (client, message, args, db) => {
 };
 
 module.exports.help = {
-  name: 'Reload',
+  name: 'reload',
   description: 'Reloads a command',
   usage: 'b@reload <command>',
-  category: 'Developer',
+  category: 'dev',
   accessableby: 'Server Owners',
   aliases: []
 };

@@ -11,10 +11,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Say',
+  name: 'say',
   description: 'Make the bot say something',
   usage: 'b@say <message>',
-  category: 'Developer',
+  category: 'dev',
   accessableby: 'Event Admins',
   aliases: ['parrot']
 };

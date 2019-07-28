@@ -19,10 +19,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Milk',
+  name: 'milk',
   description: 'Milks you',
   usage: 'b@milk <user>',
-  category: 'Custom Commands',
+  category: 'customs',
   accessableby: 'Jonteiro#6969 and Server Owners',
   aliases: []
 };

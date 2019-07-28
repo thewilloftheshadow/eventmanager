@@ -14,10 +14,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Panda',
+  name: 'panda',
   description: 'Gives a cute panda picture - Command for Emmanuel#8999',
   usage: 'b@panda',
-  category: 'Custom Commands',
+  category: 'customs',
   accessableby: 'Anyone',
   aliases: []
 };

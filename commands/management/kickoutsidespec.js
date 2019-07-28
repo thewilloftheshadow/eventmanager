@@ -34,10 +34,10 @@ if(!message.member.roles.some(r=>["Event Owners", "Top"].includes(r.name)) && !c
 }
 
 exports.help = {
-  name: 'Kick Outside Spectators',
+  name: 'kickoutsidespectators',
   description: 'Kick all outside spectators at the end of an event',
   usage: 'b@kickallusersendofevent',
-  category: 'Server/Bot Management',
+  category: 'management',
   accessableby: 'Event Owners',
   aliases: []
 };

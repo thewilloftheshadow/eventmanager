@@ -42,7 +42,7 @@ module.exports.help = {
   name: 'help',
   description: 'Displays all commands that the bot has or information on a command',
   usage: 'b@help',
-  category: 'Public Commands',
+  category: 'publiccmd',
   accessableby: 'Everyone',
   aliases: ['h', 'commands']
 };

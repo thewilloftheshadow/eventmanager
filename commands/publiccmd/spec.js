@@ -6,10 +6,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Spec',
+  name: 'spec',
   description: 'Gets a count of the number of Spectators',
   usage: 'b@spec',
-  category: 'Public Commands',
+  category: 'publiccmd',
   accessableby: 'Everyone',
   aliases: ['spectators', 'spectator']
 };

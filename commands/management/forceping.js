@@ -13,10 +13,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Force Ping',
+  name: 'forceping',
   description: 'Force ping any unpingable role',
   usage: 'b@forceping <role name>',
-  category: 'Server/Bot Management',
+  category: 'management',
   accessableby: 'Event Owners',
   aliases: []
 };

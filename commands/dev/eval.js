@@ -24,10 +24,10 @@ function clean(text) {
 }   
 
 exports.help = {
-  name: 'Eval',
+  name: 'eval',
   description: 'Run any code',
   usage: 'b@eval <code>',
-  category: 'Developer',
+  category: 'dev',
   accessableby: 'Server Owners',
   aliases: []
 };

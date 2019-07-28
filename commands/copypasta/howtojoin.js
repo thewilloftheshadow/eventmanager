@@ -4,10 +4,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'How To Join',
+  name: 'howtojoin',
   description: 'Prints out instructions on how to join the server',
   usage: 'b@howtojoin',
-  category: 'Copypasta',
+  category: 'copypasta',
   accessableby: 'Anyone',
   aliases: []
 };

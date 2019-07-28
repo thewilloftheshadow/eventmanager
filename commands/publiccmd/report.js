@@ -35,10 +35,10 @@ exports.run = (client, message, args, db) => {
   }
 
 exports.help = {
-  name: 'Report',
+  name: 'report',
   description: 'Report a user for breaking rules OR report a bug in the event/bot',
   usage: 'b@report <user> <reason> OR b@report <bug>',
-  category: 'Public Commands',
+  category: 'publiccmd',
   accessableby: 'everyone',
   aliases: ['reportbug', 'reportuser']
 };
