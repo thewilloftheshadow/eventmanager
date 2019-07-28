@@ -32,10 +32,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Join Event',
+  name: 'joinevent',
   description: 'Use this command to join the event server',
   usage: 'b@joinevent',
-  category: 'Server/Bot Management',
+  category: 'management',
   accessableby: 'Anyone, but only at certain times',
   aliases: []
 };

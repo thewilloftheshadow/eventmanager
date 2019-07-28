@@ -44,10 +44,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Rules',
+  name: 'rules',
   description: 'Lists the rules of the server',
   usage: 'b@rules',
-  category: 'Copypasta',
+  category: 'copypasta',
   accessableby: 'Server Owners Only',
   aliases: []
 };

@@ -12,10 +12,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Part',
+  name: 'part',
   description: 'Resets a player to Participant',
   usage: 'b@part <user>',
-  category: 'Role Management',
+  category: 'rolemanagement',
   accessableby: 'Event Admins',
   aliases: ['participant']
 };

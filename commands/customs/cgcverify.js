@@ -11,10 +11,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'CGC Verify',
+  name: 'cgcverify',
   description: 'Checks the verified users of CGC and their verification status',
   usage: 'b@cgcverify',
-  category: 'Custom Commands',
+  category: 'customs',
   accessableby: 'CGC Admins Only',
   aliases: ['cgc']
 };

@@ -37,7 +37,7 @@ let roleName = message.content.split(" ").slice(1).join(" ");
 }
 
 exports.help = {
-  name: 'InRole',
+  name: 'inrole',
   description: 'Get the users who are in a role',
   usage: 'b@inrole <role name>',
   category: 'bdo',

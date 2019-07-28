@@ -4,10 +4,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Left',
+  name: 'left',
   description: 'Gets a count of the remaining number of Participants',
   usage: 'b@left',
-  category: 'Public Commands',
+  category: 'publiccmd',
   accessableby: 'Everyone',
   aliases: ['remaining']
 };

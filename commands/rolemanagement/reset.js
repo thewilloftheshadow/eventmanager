@@ -12,10 +12,10 @@ exports.run = (client, message, args, db) => {
 }
 
 exports.help = {
-  name: 'Reset',
+  name: 'reset',
   description: 'Resets a player to Spectator',
   usage: 'b@reset <user>',
-  category: 'Role Management',
+  category: 'rolemanagement',
   accessableby: 'Event Admins',
   aliases: ['resetuser', "resetu", "setspec"]
 };
