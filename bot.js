@@ -101,12 +101,6 @@ client.on("ready", () => {
   console.log("Servers:")
   client.guilds.forEach((guild) => {
     console.log(" - " + guild.name)
-    
-    if(guild.id === "413728648575582209"){
-      guild.channels.forEach((channel) => {
-        console.log(`-- ${channel.name} (${channel.type}) - ${channel.id}`)
-      })
-    }
     if(guild.id === config.eventserver && listusers){
     let membersWithOwner = guild.members.filter(member => { 
         return member.roles.find("name", "Event Owners");
