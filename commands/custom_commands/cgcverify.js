@@ -14,7 +14,7 @@ exports.help = {
   name: 'cgcverify',
   description: 'Checks the verified users of CGC and their verification status',
   usage: 'b@cgcverify',
-  category: 'customs',
+  category: 'custom_commands',
   accessableby: 'CGC Admins Only',
   aliases: ['cgc']
 };

@@ -40,7 +40,7 @@ exports.help = {
   name: 'inrole',
   description: 'Get the users who are in a role',
   usage: 'b@inrole <role name>',
-  category: 'bdo',
+  category: 'b@do_commands',
   accessableby: 'Everyone',
   aliases: ['rolemembers']
 };

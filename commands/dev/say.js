@@ -14,7 +14,7 @@ exports.help = {
   name: 'say',
   description: 'Make the bot say something',
   usage: 'b@say <message>',
-  category: 'dev',
+  category: 'nohelp',
   accessableby: 'Event Admins',
   aliases: ['parrot']
 };

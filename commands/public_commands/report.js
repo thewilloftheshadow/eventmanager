@@ -38,7 +38,7 @@ exports.help = {
   name: 'report',
   description: 'Report a user for breaking rules OR report a bug in the event/bot',
   usage: 'b@report <user> <reason> OR b@report <bug>',
-  category: 'publiccmd',
+  category: 'public_commands',
   accessableby: 'everyone',
   aliases: ['reportbug', 'reportuser']
 };

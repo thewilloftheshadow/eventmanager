@@ -28,7 +28,7 @@ module.exports.help = {
   name: 'reload',
   description: 'Reloads a command',
   usage: 'b@reload <command>',
-  category: 'dev',
+  category: 'nohelp',
   accessableby: 'Server Owners',
   aliases: []
 };
