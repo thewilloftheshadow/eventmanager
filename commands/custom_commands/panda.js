@@ -17,7 +17,7 @@ exports.help = {
   name: 'panda',
   description: 'Gives a cute panda picture - Command for Emmanuel#8999',
   usage: 'b@panda',
-  category: 'customs',
+  category: 'custom_commands',
   accessableby: 'Anyone',
   aliases: []
 };

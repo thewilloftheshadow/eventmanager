@@ -15,9 +15,9 @@ app.get("/roles", (request, response) => {
   console.log(Date.now() + " Ping Received");
   response.sendFile(__dirname + '/roles.html');
 });
-var listener = app.listen(process.env.PORT, function() {
- console.log('Your app is listening on port ' + listener.address().port);
-});
+//var listener = app.listen(process.env.PORT, function() {
+// console.log('Your app is listening on port ' + listener.address().port);
+//});
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000);
@@ -28,6 +28,7 @@ const giveaways = require("discord-giveaways")
 const client = new Client();
 const config = require("./config.json");
 const lucian = require("./lucian-is-paranoid.json");
+
 
 const talkedRecently = new Set();
 
@@ -41,7 +42,7 @@ const Sentencer = require('sentencer');
 const PI = require("pi");
 const ms = require("ms");
 
-
+db.createWebview('eventsarelit', process.env.PORT);
 var PastebinAPI = require('pastebin-js'),
     pastebin = new PastebinAPI(process.env.PASTEBINKEY);
 
@@ -137,6 +138,7 @@ client.on("ready", () => {
       }
       console.log("Listed all ping users");
     })
+    
   }
   })
 });

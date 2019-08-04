@@ -6,16 +6,16 @@ exports.run = (client, message, args, db) => {
     let user = message.mentions.members.first() || message.guild.members.get(args[0]);
     if(!user)
       return message.reply("You must mention a user or provide their id!")
-    message.channel.send(user.user.tag + " has been made a Participant");
-    user.addRole(participant).catch(console.error);
-    user.removeRole(spectator).catch(console.error);
+    message.channel.send(user.user.tag + " has been reset to Spectator");
+    user.addRole(spectator).catch(console.error);
+    user.removeRole(participant).catch(console.error);
 }
 
 exports.help = {
-  name: 'part',
-  description: 'Resets a player to Participant',
-  usage: 'b@part <user>',
-  category: 'rolemanagement',
+  name: 'reset',
+  description: 'Resets a player to Spectator',
+  usage: 'b@reset <user>',
+  category: 'role_management',
   accessableby: 'Event Admins',
-  aliases: ['participant']
+  aliases: ["setspec"]
 };

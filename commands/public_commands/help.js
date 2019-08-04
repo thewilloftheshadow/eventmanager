@@ -14,9 +14,10 @@ exports.run = (client, message, args, db) => {
     embed.setFooter(`${client.user.username} | Total Commands: ${client.commands.size}`, client.user.displayAvatarURL);
 
     categories.forEach(category => {
+      //const dir = client.commands
       const dir = client.commands.filter(c => c.help.category === category);
       try {
-        embed.addField(`❯ ${category} [${dir.size}]:`, dir.map(c => `\`${c.help.name}\``).join(' '));
+        embed.addField(`➢ ${category} [${dir.size}]:`, dir.map(c => `***${c.help.name}***`).join(', '));
       } catch(e) {
         console.log(e);
       }
@@ -42,7 +43,7 @@ module.exports.help = {
   name: 'help',
   description: 'Displays all commands that the bot has or information on a command',
   usage: 'b@help',
-  category: 'publiccmd',
+  category: 'public_commands',
   accessableby: 'Everyone',
   aliases: ['h', 'commands']
 };

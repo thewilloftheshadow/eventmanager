@@ -9,7 +9,7 @@ exports.help = {
   name: 'spec',
   description: 'Gets a count of the number of Spectators',
   usage: 'b@spec',
-  category: 'publiccmd',
+  category: 'public_commands',
   accessableby: 'Everyone',
   aliases: ['spectators', 'spectator']
 };

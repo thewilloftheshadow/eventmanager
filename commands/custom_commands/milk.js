@@ -22,7 +22,7 @@ exports.help = {
   name: 'milk',
   description: 'Milks you',
   usage: 'b@milk <user>',
-  category: 'customs',
+  category: 'custom_commands',
   accessableby: 'Jonteiro#6969 and Server Owners',
   aliases: []
 };
