@@ -1,6 +1,7 @@
 exports.run = (client, message, args, db) => {  
     if(!message.member.roles.some(r=>["Event Owner", "Event Admins", "Event Team"].includes(r.name)) && !client.config.owners.indexOf(message.author.id) > -1)
       return
+  console.log("say.js")
     message.delete().catch(O_o=>{});
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
@@ -14,7 +15,7 @@ exports.help = {
   name: 'say',
   description: 'Make the bot say something',
   usage: 'b@say <message>',
-  category: 'nohelp',
+  category: 'dev',
   accessableby: 'Event Admins',
   aliases: ['parrot']
 };

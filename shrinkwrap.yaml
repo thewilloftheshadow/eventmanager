@@ -1,13 +1,12 @@
 dependencies:
   common-tags: 1.8.0
-  discord-giveaways: 2.1.18
+  discord-giveaways: 2.1.19
   discord.js: 11.5.1
   enmap: 5.1.0
   express: 4.17.1
   node-cmd: 3.0.0
   pastebin-js: 1.0.2
   pi: 2.0.3
-  pnpm: 3.6.1
   quick.db: 6.3.2
   random-animals-api: 1.2.0
   sentencer: 0.2.0
@@ -72,10 +71,10 @@ packages:
       node: '>=0.8'
     resolution:
       integrity: sha1-8S4PPF13sLHN2RRpQuTpbB5N1SU=
-  /async-limiter/1.0.0:
+  /async-limiter/1.0.1:
     dev: false
     resolution:
-      integrity: sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==
+      integrity: sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==
   /asynckit/0.4.0:
     dev: false
     resolution:
@@ -267,14 +266,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
-  /discord-giveaways/2.1.18:
+  /discord-giveaways/2.1.19:
     dependencies:
-      discord.js-v11: /discord.js/11.5.1
-      discord.js-v12: github.com/discordjs/discord.js/d8516efa36f62ef8a6e33b0b35ba5f482e22d103
       randomstring: 1.1.5
     dev: false
     resolution:
-      integrity: sha512-IXGrpacJGs4jZcO/rnrLGKUF99sUzheUXcS9lS5F6cbKEpjloZQ1yhMyCHws6UhFSMX1wCkGvk+pV2+CkVVMQA==
+      integrity: sha512-I7hkNNHFXd6Ep/Wh1EtdxnonOp2Ud2xQzj8svZT8+qdvPzVGU1gH4D+vHFeXPLegaIm826WilSl5in+7oIw3Sg==
   /discord.js/11.5.1:
     dependencies:
       long: 4.0.0
@@ -740,10 +737,6 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=
-  /pako/1.0.10:
-    dev: false
-    resolution:
-      integrity: sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
   /parseqs/0.0.5:
     dependencies:
       better-assert: 1.0.2
@@ -794,26 +787,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-SCs0rwxk2rUJ7CDyrDF+L5w7XWAqk4jC43p+mVu2bpMLY0mMTMPytmUhwiY1S7Ccecm6oAw8taOXRHanjauLDQ==
-  /pnpm/3.6.1:
-    dev: false
-    engines:
-      node: '>=8.15'
-    hasBin: true
-    resolution:
-      integrity: sha512-XFvoO6kuglqLbzAzLrwscCDwH/Al4WnXhhKy5JXO6ERNgAwaQcJOFX9Fbj+qVgzmSn5Lf3MSAbrEVGAxWM4Kjw==
   /prism-media/0.0.3:
     dev: false
     resolution:
       integrity: sha512-c9KkNifSMU/iXT8FFTaBwBMr+rdVcN+H/uNv1o+CuFeTThNZNTOrQ+RgXA1yL/DeLk098duAeRPP3QNPNbhxYQ==
-  /prism-media/1.0.2:
-    dev: false
-    peerDependencies:
-      ffmpeg-binaries: ^4.0.0
-      ffmpeg-static: ^2.4.0
-      node-opus: ^0.3.1
-      opusscript: ^0.0.6
-    resolution:
-      integrity: sha512-KCu3SlT1EtS0lvF74NGLSTzr5jrkRajE9n+S2jnUvvdiN5SpjsGj0/HgR1QK9+985Yv8cxjwZnpFRaj+SimDGA==
   /prng-well1024a/1.0.1:
     dev: false
     resolution:
@@ -827,10 +804,10 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha512-t/7RxHXPH6cJtP0pRG6smSr9QJidhB+3kXu0KgXnbGYMgzEnUxRQ4/LDdfOwZEMyIh3/xHb8PX3t+lfL9z+YVQ==
-  /psl/1.2.0:
+  /psl/1.3.0:
     dev: false
     resolution:
-      integrity: sha512-GEn74ZffufCmkDDLNcl3uuyF/aSD6exEyh1v/ZSdAomB82t6G9hzJVRx0jBmLDW+VfZqks3aScmMw9DszwUalA==
+      integrity: sha512-avHdspHO+9rQTLbv1RO+MPYeP/SzsCoxofjVnHanETfQhTJrmB0HlDoW+EiN/R+C0BZ+gERab9NY0lPN2TxNag==
   /punycode/1.4.1:
     dev: false
     resolution:
@@ -990,10 +967,6 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha512-JMrvUwE54emCYWlTI+hGrGv5I8dEwmco/00EvkzIIsR7MqrHonbD9pO2MOfFnpFntl7ecpZs+3mW+XbQZu9QCg==
-  /setimmediate/1.0.5:
-    dev: false
-    resolution:
-      integrity: sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
   /setprototypeof/1.1.1:
     dev: false
     resolution:
@@ -1086,7 +1059,7 @@ packages:
       integrity: sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
   /tough-cookie/2.4.3:
     dependencies:
-      psl: 1.2.0
+      psl: 1.3.0
       punycode: 1.4.1
     dev: false
     engines:
@@ -1161,13 +1134,13 @@ packages:
       integrity: sha1-OhBcoXBTr1XW4nDB+CiGguGNpAA=
   /ws/6.1.4:
     dependencies:
-      async-limiter: 1.0.0
+      async-limiter: 1.0.1
     dev: false
     resolution:
       integrity: sha512-eqZfL+NE/YQc1/ZynhojeV8q+H050oR8AZ2uIev7RU10svA9ZnJUddHcOUZTJLinZ9yEfdA2kSATS2qZK5fhJA==
   /ws/6.2.1:
     dependencies:
-      async-limiter: 1.0.0
+      async-limiter: 1.0.1
     dev: false
     resolution:
       integrity: sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==
@@ -1194,44 +1167,18 @@ packages:
     dev: false
     resolution:
       integrity: sha1-AI4G2AlDIMNy28L47XagymyKxBk=
-  github.com/discordjs/discord.js/d8516efa36f62ef8a6e33b0b35ba5f482e22d103:
-    dependencies:
-      form-data: 2.5.0
-      node-fetch: 2.6.0
-      pako: 1.0.10
-      prism-media: 1.0.2
-      setimmediate: 1.0.5
-      tweetnacl: 1.0.1
-      ws: 6.2.1
-    dev: false
-    engines:
-      node: '>=10.0.0'
-    name: discord.js
-    peerDependencies:
-      '@discordjs/uws': ^11.149.1
-      bufferutil: ^4.0.1
-      erlpack: discordapp/erlpack
-      libsodium-wrappers: ^0.7.4
-      sodium: ^3.0.2
-      zlib-sync: ^0.1.4
-      zucc: ^0.1.0
-    resolution:
-      registry: 'https://registry.npmjs.org/'
-      tarball: 'https://codeload.github.com/discordjs/discord.js/tar.gz/d8516efa36f62ef8a6e33b0b35ba5f482e22d103'
-    version: 12.0.0-dev
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   common-tags: ^1.8.0
-  discord-giveaways: ^2.1.15
+  discord-giveaways: ^2.1.19
   discord.js: ^11.5.1
   enmap: ^5.1.0
   express: ^4.16.4
   node-cmd: ^3.0.0
   pastebin-js: ^1.0.1
   pi: ^2.0.3
-  pnpm: ^3.6.1
   quick.db: ^6.3.2
   random-animals-api: ^1.2.0
   sentencer: ^0.2.0

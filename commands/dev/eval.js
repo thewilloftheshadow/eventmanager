@@ -27,7 +27,7 @@ exports.help = {
   name: 'eval',
   description: 'Run any code',
   usage: 'b@eval <code>',
-  category: 'nohelp',
+  category: 'dev',
   accessableby: 'Server Owners',
   aliases: []
 };

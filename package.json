@@ -5,19 +5,18 @@
   "name": "hello-express",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
   "dependencies": {
-    "discord-giveaways": "^2.1.15",
+    "discord-giveaways": "^2.1.19",
     "discord.js": "^11.5.1",
     "enmap": "^5.1.0",
     "express": "^4.16.4",
     "node-cmd": "^3.0.0",
     "pastebin-js": "^1.0.1",
     "pi": "^2.0.3",
-    "pnpm": "^3.6.1",
     "quick.db": "^6.3.2",
     "random-animals-api": "^1.2.0",
     "sentencer": "^0.2.0",

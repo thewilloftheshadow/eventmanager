@@ -598,4 +598,4 @@ function clean(text) {
   else
       return text;
 }     
-client.login(config.token); 
+client.login(process.env.TOKEN); 
