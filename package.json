@@ -17,7 +17,7 @@
     "node-cmd": "^3.0.0",
     "pastebin-js": "^1.0.1",
     "pi": "^2.0.3",
-    "pnpm": "^3.6.1",
+    "pnpm": "^4.1.6",
     "quick.db": "^6.3.2",
     "random-animals-api": "^1.2.0",
     "sentencer": "^0.2.0",
