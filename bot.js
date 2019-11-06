@@ -77,7 +77,7 @@ let giveawaymessages = {
         }
 }
 
-let leveltext = ["n00b", "Event Participant", "Event Team", "Event Admin", "Bot Admin", "Bot Owner"]
+let leveltext = ["n00b", "Event Player", "Event Team", "Event Admin", "Bot Admin", "Bot Owner"]
 
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
@@ -141,6 +141,7 @@ client.on("message", async message => {
   
   let level = checklevel(message.author.id, message.guild.id)
   message.author.level = level
+  console.log(` - Level ${message.author.level}: ${message.author.id}`)
   
   
   // Also good practice to ignore any message that does not start with our prefix, 
@@ -513,7 +514,7 @@ function checklevel(userid, guildid){
   let eventteam = client.guilds.get(config.bbserver).roles.get("435139724919963653");
   let bbuser = client.guilds.get(config.bbserver).members.get(userid)
   let guilduser = client.guilds.get(guildid).members.get(userid)
-  let level
+  let level = 1
 
   if(userid === config.ownerID){
     level = 5
@@ -525,11 +526,7 @@ function checklevel(userid, guildid){
     if(client.guilds.get(config.bbserver).members.get(userid).roles.has(eventteam.id)){
       level = 2
     }
-  } else if(guilduser){
-    if(client.guilds.get(guildid).members.get(userid).roles.some(r=>["Participant", "Spectator", "Outside Spectator"].includes(r.name))){
-    level = 1
-    }
-  } else level = 0
+  } else level = 1
   
   return level
 }
