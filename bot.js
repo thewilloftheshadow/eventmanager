@@ -525,7 +525,7 @@ function checklevel(userid, guildid){
     if(client.guilds.get(config.bbserver).members.get(userid).roles.has(eventteam.id)){
       level = 2
     }
-  } else if(bbuser){
+  } else if(guilduser){
     if(client.guilds.get(guildid).members.get(userid).roles.some(r=>["Participant", "Spectator", "Outside Spectator"].includes(r.name))){
     level = 1
     }
