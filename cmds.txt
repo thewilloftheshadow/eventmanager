@@ -1,0 +1,48 @@
+__***Commands for*** <@&609142525978083353> ***and*** <@&607708138220683274>__
+> ```diff
+> b@kickallusersendofevent
+> - This command is used to kick all the Participants and Spectators from the Event Server
+> ```
+> ```diff
+> b@kickoutsidespec
+> - This command is used to kick all the Outside Spectators from the Event Server
+> ```
+> ```diff
+> b@splitpart
+> - This command is used to split everyone in the Participant role into two teams. More updates are coming to this command soon.
+> ```
+
+__***Commands for*** <@&602903750809747491>__
+> ```diff
+> b@reset <user>
+> - This command will reset a players BoxBot data and change their role from Partipant to Spectator
+> ```
+> ```diff
+> b@setspec
+> - This command will only change a players role from Partipant to Spectator
+> ```
+> ```diff
+> b@part <user> or b@setpart <user>
+> - This command will change a players role from Spectator to Participant
+> ```
+
+__***Commands for*** <@&602909583966470251>__
+> ```diff
+> b@giveaway <time> <winners> <prize>
+> - This command will start a giveaway in the channel you use the command in
+> - Example: b@giveaway 1d 1 Sample Prize
+> ```
+> ```diff
+> b@reroll <message_id>
+> - This command will reroll a giveaway THAT HAS ALREADY ENDED
+> ```
+
+__***Commands for*** <@&602881840348659712>__
+> ```diff
+> b@left
+> - This command tells you how many participants remain in the event
+> ```
+> ```diff
+> b@spec
+> - This command tells you how many spectators are in the event, both outside and people who have died
+> ```
