@@ -1,0 +1,6 @@
+Level 5: Bot Owner
+Level 4: Bot Admin
+Level 3: Event Admin
+Level 2: Event Team
+Level 1: Event Participant
+Level 0: Everyone
