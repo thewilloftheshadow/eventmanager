@@ -31,9 +31,10 @@ fs.readFile(__dirname + '/node_modules/discord-giveaways/giveaways.json', 'utf8'
 var listener = app.listen(process.env.PORT, function() {
  console.log('Your app is listening on port ' + listener.address().port);
 });
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 280000);
+
+//let listener = app.listen(process.env.PORT, function() {
+// console.log('Your app is listening on port ' + listener.address().port);
+//});
 //end server code
 
 const { Client, Collection } = require('discord.js');
@@ -55,9 +56,10 @@ const PI = require("pi");
 const ms = require("ms");
 const giveaways = require("discord-giveaways")
 
-//db.createWebview('eventsarelit', process.env.PORT);
-var PastebinAPI = require('pastebin-js'),
-    pastebin = new PastebinAPI(process.env.PASTEBINKEY);
+=======
+db.createWebview('eventsarelit', process.env.PORT);
+let PastebinAPI = require('pastebin-js'),
+pastebin = new PastebinAPI(process.env.PASTEBINKEY);
 
 let giveawaymessages = {
         giveaway: "🎉🎉 **GIVEAWAY** 🎉🎉",
@@ -509,6 +511,7 @@ client.on("message", async message => {
 
 client.login(process.env.TOKEN);
 
+
 function clean(text) {
   if (typeof(text) === "string")
     return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
@@ -522,4 +525,5 @@ function checktier(required, message){
     return false
   } else return true
 }
+
 
