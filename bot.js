@@ -31,10 +31,9 @@ fs.readFile(__dirname + '/node_modules/discord-giveaways/giveaways.json', 'utf8'
 var listener = app.listen(process.env.PORT, function() {
  console.log('Your app is listening on port ' + listener.address().port);
 });
-
-//let listener = app.listen(process.env.PORT, function() {
-// console.log('Your app is listening on port ' + listener.address().port);
-//});
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);
 //end server code
 
 const { Client, Collection } = require('discord.js');
@@ -56,10 +55,9 @@ const PI = require("pi");
 const ms = require("ms");
 const giveaways = require("discord-giveaways")
 
-=======
-db.createWebview('eventsarelit', process.env.PORT);
-let PastebinAPI = require('pastebin-js'),
-pastebin = new PastebinAPI(process.env.PASTEBINKEY);
+//db.createWebview('eventsarelit', process.env.PORT);
+var PastebinAPI = require('pastebin-js'),
+    pastebin = new PastebinAPI(process.env.PASTEBINKEY);
 
 let giveawaymessages = {
         giveaway: "🎉🎉 **GIVEAWAY** 🎉🎉",
@@ -141,22 +139,8 @@ client.on("message", async message => {
   // and not get into a spam loop (we call that "botception").
   if(message.author.bot) return;
   
-  let eventteam = client.guilds.get(config.bbserver).roles.get("435139724919963653");
-  let bbuser = client.guilds.get(config.bbserver).members.get(message.author.id)
-
-  if(message.author.id === config.ownerID){
-    message.author.level = 5
-  } else if(client.config.owners.indexOf(message.author.id) > -1){
-    message.author.level = 4
-  } else if (client.config.admins.indexOf(message.author.id) > -1){
-    message.author.level = 3
-  } else if(bbuser){
-    if(client.guilds.get(config.bbserver).members.get(message.author.id).roles.has(eventteam.id)){
-      message.author.level = 2
-    }
-  } else if(message.member.roles.some(r=>["Participant", "Spectator", "Outside Spectator"].includes(r.name))){
-    message.author.level = 1
-  } else message.author.level = 0
+  let level = checklevel(message.author.id, message.guild.id)
+  message.author.level = level
   
   
   // Also good practice to ignore any message that does not start with our prefix, 
@@ -511,7 +495,6 @@ client.on("message", async message => {
 
 client.login(process.env.TOKEN);
 
-
 function clean(text) {
   if (typeof(text) === "string")
     return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
@@ -526,4 +509,27 @@ function checktier(required, message){
   } else return true
 }
 
+function checklevel(userid, guildid){
+  let eventteam = client.guilds.get(config.bbserver).roles.get("435139724919963653");
+  let bbuser = client.guilds.get(config.bbserver).members.get(userid)
+  let guilduser = client.guilds.get(guildid).members.get(userid)
+  let level
 
+  if(userid === config.ownerID){
+    level = 5
+  } else if(client.config.owners.indexOf(userid) > -1){
+    level = 4
+  } else if (client.config.admins.indexOf(userid) > -1){
+    level = 3
+  } else if(bbuser){
+    if(client.guilds.get(config.bbserver).members.get(userid).roles.has(eventteam.id)){
+      level = 2
+    }
+  } else if(bbuser){
+    if(client.guilds.get(guildid).members.get(userid).roles.some(r=>["Participant", "Spectator", "Outside Spectator"].includes(r.name))){
+    level = 1
+    }
+  } else level = 0
+  
+  return level
+}

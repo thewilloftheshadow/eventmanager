@@ -1,3 +1,4 @@
+Level 6: Faith
 Level 5: Bot Owner
 Level 4: Bot Admin
 Level 3: Event Admin
