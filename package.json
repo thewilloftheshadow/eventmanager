@@ -10,7 +10,7 @@
     "start": "node bot.js"
   },
   "dependencies": {
-    "discord-giveaways": "^2.3.0",
+    "discord-giveaways": "^3.2.1",
     "discord.js": "^11.5.1",
     "enmap": "^5.2.0",
     "express": "^4.16.4",
